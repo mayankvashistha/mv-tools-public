@@ -1,0 +1,14 @@
+export ANSIBLE_HOST_KEY_CHECKING=False
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+alias ll='ls -ld */'
+export GREP_OPTIONS='--color=always'
+export PROMPT_COMMAND='history -a'
+CURRENT_DATE=`date "+%b-%d"`
+alias service='/bin/launchctl'
+alias grep='grep -E --color'
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+source $HOME/Library/Python/2.7/bin//virtualenvwrapper.sh
+PYTHONPATH=$HOME/mv-virt-env/python_home/bin/:$HOME/mv-virt-env/python_home/lib/pythonr3.6/site-packages/
